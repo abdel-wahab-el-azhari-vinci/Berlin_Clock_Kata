@@ -14,4 +14,16 @@ describe("Seconds function should return the answer", function () {
 
     expect(result).toBe("Light on");
   });
+
+  it("Seconds should return Light off when given an odd number", function () {
+    const result = secondsMain.seconds(3);
+
+    expect(result).toBe("Light off");
+  });
+
+  it("Seconds should return Light on when given an even number", function () {
+    const result = secondsMain.seconds(4);
+
+    expect(result).toBe("Light on");
+  });
 });
