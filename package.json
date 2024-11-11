@@ -1,0 +1,16 @@
+{
+  "name": "berlin_clock_kata",
+  "version": "1.0.0",
+  "description": "",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "Abdel Wahab, Ayoub, Ali-Reda",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^5.4.0"
+  }
+}
