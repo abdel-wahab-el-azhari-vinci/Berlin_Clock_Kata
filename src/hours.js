@@ -8,9 +8,10 @@ export class HoursMain {
   }
 
   hoursFive(hour){
-    if(hour === 1){
-        return 0;
+    if(hour === 5){
+        return 1;
     }
+    return 0;
   }
 }
 
