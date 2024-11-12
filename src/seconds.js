@@ -1,8 +1,10 @@
+// R => Light On
+// X => Light Off
 export class SecondsMain {
   seconds(second) {
     if (second%2 == 0) {
-      return "Light on";
+      return "R";
     }
-    return "Light off";
+    return "X";
   }
 }
