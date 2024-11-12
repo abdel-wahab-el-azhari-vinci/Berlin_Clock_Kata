@@ -21,4 +21,9 @@ describe("Minutes function should return the answer", function () {
     expect(result).toBe("2 lights on");
   });
 
+  it("Minutes should return 3 lights on when given 3", function () {
+    const result = minutesMain.minutesOne(3);
+
+    expect(result).toBe("3 lights on");
+  });
 });
