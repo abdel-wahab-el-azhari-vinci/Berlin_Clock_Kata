@@ -38,5 +38,10 @@ describe("Minutes function should return the answer", function () {
 
     expect(result).toBe("0 lights on");
   });
-  
+
+  it("Minutes should return 1 lights on when given 36", function () {
+    const result = minutesMain.minutesOne(36);
+
+    expect(result).toBe("1 lights on");
+  });
 });
