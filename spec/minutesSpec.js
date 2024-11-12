@@ -66,6 +66,12 @@ describe("MinutesFive function should return the answer", function () {
 
     expect(result).toBe("1 lights on");
   });
+
+  it("MinutesFive should return 2 lights on when given 10", function () {
+    const result = minutesMain.minutesFive(10);
+
+    expect(result).toBe("2 lights on");
+  });
 });
 
 
