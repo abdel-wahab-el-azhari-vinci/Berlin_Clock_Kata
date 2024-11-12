@@ -40,3 +40,18 @@ describe("Minutes function should return the answer", function () {
   });
   
 });
+
+describe("Minutes function should return the answer", function () {
+  const minutesMain = new MinutesMain();
+
+  it("Minutes should return 1 lights on when given 5", function () {
+    const result = minutesMain.minutesFive(5);
+
+    expect(result).toBe("1 lights on");
+  });
+
+ 
+  
+});
+
+
