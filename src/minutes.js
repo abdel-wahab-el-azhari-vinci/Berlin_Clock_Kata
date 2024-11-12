@@ -1,19 +1,18 @@
 export class MinutesMain {
   minutesOne(minute) {
-    return isMultipleOf5(minute) + " lights on";
+    return isMultipleOf5(minute);
   }
 
   minutesFive(minute) {
     if (minute <= 4) {
-      return "0 lights on";
+      return 0;
     }
 
     if(minute === 10){
-
-        return "2 lights on";
+       return 2;
     }
 
-    return "1 lights on";
+    return 1;
   }
 }
 
