@@ -32,4 +32,10 @@ describe("HoursOne function should return the answer", function () {
 
     expect(result).toBe(0);
   });
+
+  it("HoursOne should return 1 when given 6", function () {
+    const result = hoursMain.hoursOne(6);
+
+    expect(result).toBe(1);
+  });
 });
