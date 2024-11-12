@@ -51,3 +51,13 @@ describe("HoursOne function should return the answer", function () {
     expect(result).toBe(4);
   });
 });
+
+describe("HoursFive function should return the answer", function () {
+  const hoursMain = new HoursMain();
+
+  it("HoursFive should return 0 when given 1", function () {
+    const result = hoursMain.hoursFive(1);
+
+    expect(result).toBe(0);
+  });
+});
