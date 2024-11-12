@@ -3,15 +3,22 @@ import { MinutesMain } from "../src/minutes.js";
 describe("Minutes function should return the answer", function () {
   const minutesMain = new MinutesMain();
 
-  it("Minutes should return Light off when given 0", function () {
+  it("Minutes should return 0 light on when given 0", function () {
     const result = minutesMain.minutesOne(0);
 
     expect(result).toBe("0 lights on");
   });
 
-  it("Minutes should return Light off when given 1", function () {
+  it("Minutes should return 1 light on when given 1", function () {
     const result = minutesMain.minutesOne(1);
 
-    expect(result).toBe("1 light on");
+    expect(result).toBe("1 lights on");
   });
+
+  it("Minutes should return 2 lights on when given 2", function () {
+    const result = minutesMain.minutesOne(2);
+
+    expect(result).toBe("2 lights on");
+  });
+
 });
