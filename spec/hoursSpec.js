@@ -26,4 +26,10 @@ describe("HoursOne function should return the answer", function () {
 
     expect(result).toBe(4);
   });
+
+  it("HoursOne should return 0 when given 5", function () {
+    const result = hoursMain.hoursOne(5);
+
+    expect(result).toBe(0);
+  });
 });
