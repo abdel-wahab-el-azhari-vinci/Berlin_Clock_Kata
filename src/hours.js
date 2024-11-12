@@ -8,8 +8,12 @@ export class HoursMain {
   }
 
   hoursFive(hour){
-    return Math.floor(hour / 5);
+    return divideBy5(hour);
   }
+}
+
+function divideBy5(hour) {
+    return Math.floor(hour / 5);
 }
 
 function multipleOf5(hour) {

@@ -90,4 +90,10 @@ describe("HoursFive function should return the answer", function () {
 
     expect(result).toBe(2);
   });
+
+  it("HoursFive should return 4 when given 23", function () {
+    const result = hoursMain.hoursFive(23);
+
+    expect(result).toBe(4);
+  });
 });
