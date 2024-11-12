@@ -1,6 +1,8 @@
 export class MinutesMain {
-    minutesOne(minute) {
-        return "0 lights on";
+  minutesOne(minute) {
+    if (minute === 1) {
+      return "1 light on";
     }
+    return "0 lights on";
   }
-  
+}
