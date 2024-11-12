@@ -1,19 +1,10 @@
 export class MinutesMain {
   minutesOne(minute) {
-    if (minute === 1) {
-      return "1 lights on";
-    }
-    if(minute === 2){
-      return "2 lights on";
-    }
-    if (minute === 3) {
-      return "3 lights on"; 
-    }
-    if (minute === 4) {
-        return "4 lights on"; 
-      }
-    return "0 lights on";
+    return isMultipleOf5(minute) + " lights on";
   }
 }
 
+function isMultipleOf5(minute) {
+  return minute % 5;
+}
 

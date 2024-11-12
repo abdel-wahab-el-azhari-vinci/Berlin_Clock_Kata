@@ -32,4 +32,11 @@ describe("Minutes function should return the answer", function () {
 
     expect(result).toBe("4 lights on");
   });
+
+  it("Minutes should return 0 lights on when given 5", function () {
+    const result = minutesMain.minutesOne(5);
+
+    expect(result).toBe("0 lights on");
+  });
+  
 });
