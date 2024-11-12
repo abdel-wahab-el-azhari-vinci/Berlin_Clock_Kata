@@ -72,6 +72,12 @@ describe("MinutesFive function should return the answer", function () {
 
     expect(result).toBe(2);
   });
+
+  it("MinutesFive should return 11 when given 55", function () {
+    const result = minutesMain.minutesFive(55);
+
+    expect(result).toBe(11);
+  });
 });
 
 
