@@ -9,6 +9,11 @@ export class MinutesMain {
     if (minute === 3) {
       return "3 lights on"; 
     }
+    if (minute === 4) {
+        return "4 lights on"; 
+      }
     return "0 lights on";
   }
 }
+
+
