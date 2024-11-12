@@ -44,4 +44,10 @@ describe("HoursOne function should return the answer", function () {
 
     expect(result).toBe(3);
   });
+
+  it("HoursOne should return 4 when given 0", function () {
+    const result = hoursMain.hoursOne(0);
+
+    expect(result).toBe(4);
+  });
 });
