@@ -4,10 +4,14 @@ export class MinutesMain {
   }
 
   minutesFive(minute) {
-    return Math.floor(minute / 5);
+    return divideBy5(minute);
   }
 }
 
 function isMultipleOf5(minute) {
   return minute % 5;
+}
+
+function divideBy5(minute){
+   return Math.floor(minute/5);
 }
