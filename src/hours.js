@@ -8,6 +8,10 @@ export class HoursMain {
   }
 
   hoursFive(hour){
+    // case for midnight
+    if (hour === 0){
+        return 4;
+    }
     return divideBy5(hour);
   }
 }
