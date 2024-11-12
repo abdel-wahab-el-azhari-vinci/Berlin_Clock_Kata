@@ -14,6 +14,10 @@ export class HoursMain {
     if (hour === 10) {
         return 2;
     }
+
+    if (hour === 15) {
+        return 3;
+    }
     return 0;
   }
 }
