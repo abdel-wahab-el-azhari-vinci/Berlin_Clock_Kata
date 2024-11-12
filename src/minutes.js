@@ -4,15 +4,7 @@ export class MinutesMain {
   }
 
   minutesFive(minute) {
-    if (minute <= 4) {
-      return 0;
-    }
-
-    if(minute === 10){
-       return 2;
-    }
-
-    return 1;
+    return Math.floor(minute / 5);
   }
 }
 
