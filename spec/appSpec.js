@@ -247,35 +247,42 @@ describe("MinutesOnePrint function should return the answer", function () {
 });
 
 describe("MinutesFivePrint function should return the answer", function () {
-    const app = new BerlinClock();
-  
-    it("MinutesFivePrint should return XXXXXXXXXXX when given 1", function () {
-      const result = app.minutesFivePrint(1);
-  
-      expect(result).toBe("XXXXXXXXXXX");
-    });
+  const app = new BerlinClock();
 
-    it("MinutesFivePrint should return YXXXXXXXXXX when given 6", function () {
-      const result = app.minutesFivePrint(6);
-  
-      expect(result).toBe("YXXXXXXXXXX");
-    });
+  it("MinutesFivePrint should return XXXXXXXXXXX when given 1", function () {
+    const result = app.minutesFivePrint(1);
 
-    it("MinutesFivePrint should return YYXXXXXXXXX when given 11", function () {
-      const result = app.minutesFivePrint(11);
-  
-      expect(result).toBe("YYXXXXXXXXX");
-    });
-  
-    it("MinutesFivePrint should return YYRXXXXXXXX when given 17", function () {
-        const result = app.minutesFivePrint(17);
-    
-        expect(result).toBe("YYRXXXXXXXX");
-      });
-
-      it("MinutesFivePrint should return YYRYXXXXXXX when given 21", function () {
-        const result = app.minutesFivePrint(21);
-    
-        expect(result).toBe("YYYYXXXXXXX");
-      });
+    expect(result).toBe("XXXXXXXXXXX");
   });
+
+  it("MinutesFivePrint should return YXXXXXXXXXX when given 6", function () {
+    const result = app.minutesFivePrint(6);
+
+    expect(result).toBe("YXXXXXXXXXX");
+  });
+
+  it("MinutesFivePrint should return YYXXXXXXXXX when given 11", function () {
+    const result = app.minutesFivePrint(11);
+
+    expect(result).toBe("YYXXXXXXXXX");
+  });
+
+  it("MinutesFivePrint should return YYRXXXXXXXX when given 17", function () {
+    const result = app.minutesFivePrint(17);
+
+    expect(result).toBe("YYRXXXXXXXX");
+  });
+
+  it("MinutesFivePrint should return YYRYXXXXXXX when given 21", function () {
+    const result = app.minutesFivePrint(21);
+
+    expect(result).toBe("YYRYXXXXXXX");
+  });
+
+  it("MinutesFivePrint should return YYRYYXXXXXX when given 28", function () {
+    const result = app.minutesFivePrint(28);
+
+    expect(result).toBe("YYRYYXXXXXX");
+  });
+  
+});
