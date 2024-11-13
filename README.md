@@ -1,5 +1,5 @@
 # Berlin_Clock_Kata
-## This project realised by : 
+## This project realised by the group 4 which is composed by : 
  - EL AZHARI Abdel Wahab 
  - BENHAMMOU Ayoub
  - TOUZANI Ali-Reda
@@ -23,9 +23,9 @@ Usage
 To use the Berlin Clock, create an instance of the BerlinClock class and call the clockPrint method to get the current time in the Berlin Clock format.
 
 ## Output
-For the time 13:17:01, the Berlin Clock would display:
+For the time 18:17:01, the Berlin Clock would display:
 
-```Actual hour: 13:17:1
+```Actual hour: 18:17:01
      X     
     RRRX
     RRRX
