@@ -1,17 +1,9 @@
 export class HoursMain {
   hoursOne(hour) {
-    // case for midnight
-    if (hour === 0) {
-      return 4;
-    }
     return multipleOf5(hour);
   }
 
   hoursFive(hour){
-    // case for midnight
-    if (hour === 0){
-        return 4;
-    }
     return divideBy5(hour);
   }
 }

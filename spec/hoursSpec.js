@@ -45,10 +45,10 @@ describe("HoursOne function should return the answer", function () {
     expect(result).toBe(3);
   });
 
-  it("HoursOne should return 4 when given 0", function () {
+  it("HoursOne should return 0 when given 0", function () {
     const result = hoursMain.hoursOne(0);
 
-    expect(result).toBe(4);
+    expect(result).toBe(0);
   });
 });
 
@@ -97,9 +97,9 @@ describe("HoursFive function should return the answer", function () {
     expect(result).toBe(4);
   });
 
-  it("HoursFive should return 4 when given 0", function () {
+  it("HoursFive should return 0 when given 0", function () {
     const result = hoursMain.hoursFive(0);
 
-    expect(result).toBe(4);
+    expect(result).toBe(0);
   });
 });
