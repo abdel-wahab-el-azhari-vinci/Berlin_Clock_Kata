@@ -56,7 +56,7 @@ export class BerlinClock {
       tabHoursOne[i] = 'R';
     }
 
-    return tabMinutesFive.join('');
+    return tabHoursOne.join('');
   }
 }
 
