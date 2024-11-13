@@ -395,7 +395,7 @@ describe("HoursFivePrint function should return the answer", function () {
     expect(result).toBe("RRRX");
   });
 
-  it("HoursFivePrint should return RXXX when given 22", function () {
+  it("HoursFivePrint should return RRRR when given 22", function () {
     const result = app.hoursFivePrint(22);
 
     expect(result).toBe("RRRR");
