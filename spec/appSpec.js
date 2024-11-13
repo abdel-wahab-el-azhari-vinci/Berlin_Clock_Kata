@@ -342,4 +342,10 @@ describe("HoursOnePrint function should return the answer", function () {
 
     expect(result).toBe("RXXX");
   });
+
+  it("HoursOnePrint should return RRXX when given 2", function () {
+    const result = app.hoursOnePrint(2);
+
+    expect(result).toBe("RRXX");
+  });
 });
