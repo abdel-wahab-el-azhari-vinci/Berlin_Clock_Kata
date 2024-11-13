@@ -34,19 +34,7 @@ export class BerlinClock {
   }
 
   minutesFivePrint(minute) {
-    const tabMinutesFive = [
-      "X",
-      "X",
-      "X",
-      "X",
-      "X",
-      "X",
-      "X",
-      "X",
-      "X",
-      "X",
-      "X",
-    ];
+    const tabMinutesFive = ["X","X","X","X","X","X","X","X","X","X","X"];
     const minutes = this.minutesFive(minute);
 
     for (let i = 0; i < minutes; i++) {
