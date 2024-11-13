@@ -367,3 +367,15 @@ describe("HoursOnePrint function should return the answer", function () {
     expect(result).toBe("RRXX");
   });
 });
+
+describe("HoursFivePrint function should return the answer", function () {
+  const app = new BerlinClock();
+
+  it("HoursFivePrint should return XXXX when given 0", function () {
+    const result = app.hoursFivePrint(0);
+
+    expect(result).toBe("XXXX");
+  });
+
+  
+});

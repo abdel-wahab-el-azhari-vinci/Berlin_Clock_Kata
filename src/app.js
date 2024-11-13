@@ -23,40 +23,62 @@ export class BerlinClock {
   }
 
   minutesOnePrint(minute) {
-    const tabMinutesOne = ['X', 'X', 'X', 'X'];
+    const tabMinutesOne = ["X", "X", "X", "X"];
     const minutes = this.minutesOne(minute);
 
-    for (let i = 0; i < minutes; i++){
-      tabMinutesOne[i] = 'Y';
+    for (let i = 0; i < minutes; i++) {
+      tabMinutesOne[i] = "Y";
     }
 
-    return tabMinutesOne.join('');
+    return tabMinutesOne.join("");
   }
 
   minutesFivePrint(minute) {
-    const tabMinutesFive = ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'];
+    const tabMinutesFive = [
+      "X",
+      "X",
+      "X",
+      "X",
+      "X",
+      "X",
+      "X",
+      "X",
+      "X",
+      "X",
+      "X",
+    ];
     const minutes = this.minutesFive(minute);
 
-    for (let i = 0; i < minutes; i++){
-      tabMinutesFive[i] = 'Y';
-      if ((i+1)%3 === 0) {
-        tabMinutesFive[i] = 'R';
+    for (let i = 0; i < minutes; i++) {
+      tabMinutesFive[i] = "Y";
+      if ((i + 1) % 3 === 0) {
+        tabMinutesFive[i] = "R";
       }
-      
     }
 
-    return tabMinutesFive.join('');
+    return tabMinutesFive.join("");
   }
 
   hoursOnePrint(hour) {
-    const tabHoursOne = ['X', 'X', 'X', 'X'];
+    const tabHoursOne = ["X", "X", "X", "X"];
     const hours = this.hoursOne(hour);
 
-    for (let i = 0; i < hours; i++){
-      tabHoursOne[i] = 'R';
+    for (let i = 0; i < hours; i++) {
+      tabHoursOne[i] = "R";
     }
 
-    return tabHoursOne.join('');
+    return tabHoursOne.join("");
+  }
+
+  hoursFivePrint(hour) {
+    const tabHoursFive = ["X", "X", "X", "X"];
+    const hours = this.hoursFive(hour);
+
+    for (let i = 0; i < hours; i++) {
+      tabHoursFive[i] = "R";
+    }
+
+    return tabHoursFive.join("");
   }
 }
 
