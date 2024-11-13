@@ -388,4 +388,10 @@ describe("HoursFivePrint function should return the answer", function () {
 
     expect(result).toBe("RRXX");
   });
+
+  it("HoursFivePrint should return RRRX when given 15", function () {
+    const result = app.hoursFivePrint(15);
+
+    expect(result).toBe("RRRX");
+  });
 });
