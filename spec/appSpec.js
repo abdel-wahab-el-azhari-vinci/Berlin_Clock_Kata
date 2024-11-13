@@ -272,4 +272,10 @@ describe("MinutesFivePrint function should return the answer", function () {
     
         expect(result).toBe("YYRXXXXXXXX");
       });
+
+      it("MinutesFivePrint should return YYRYXXXXXXX when given 21", function () {
+        const result = app.minutesFivePrint(21);
+    
+        expect(result).toBe("YYYYXXXXXXX");
+      });
   });
