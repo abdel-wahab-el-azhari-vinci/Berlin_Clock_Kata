@@ -360,4 +360,10 @@ describe("HoursOnePrint function should return the answer", function () {
 
     expect(result).toBe("RRRR");
   });
+
+  it("HoursOnePrint should return RRXX when given 17", function () {
+    const result = app.hoursOnePrint(17);
+
+    expect(result).toBe("RRXX");
+  });
 });
