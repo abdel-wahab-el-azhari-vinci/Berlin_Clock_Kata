@@ -223,5 +223,11 @@ describe("Minutes function should return the answer", function () {
 
       expect(result).toBe("YXXX");
     });
+
+    it("MinutesOnePrint should return YYXX when given 2", function () {
+      const result = app.minutesOnePrint(2);
+
+      expect(result).toBe("YYXX");
+    });
     
   });

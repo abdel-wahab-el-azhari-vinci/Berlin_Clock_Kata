@@ -32,6 +32,8 @@ export class BerlinClock {
 
     return tabMinutesOne.join('');
   }
+
+  
 }
 
 function divideBy5(number) {
