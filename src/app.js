@@ -33,7 +33,20 @@ export class BerlinClock {
     return tabMinutesOne.join('');
   }
 
-  
+  minutesFivePrint(minute) {
+    const tabMinutesFive = ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'];
+    const minutes = this.minutesFive(minute);
+
+    for (let i = 0; i < minutes; i++){
+      tabMinutesFive[i] = 'Y';
+      if ((i+1)%3 === 0) {
+        tabMinutesFive[i] = 'R';
+      }
+      
+    }
+
+    return tabMinutesFive.join('');
+  }
 }
 
 function divideBy5(number) {

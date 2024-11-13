@@ -245,3 +245,15 @@ describe("MinutesOnePrint function should return the answer", function () {
     expect(result).toBe("XXXX");
   });
 });
+
+describe("MinutesFivePrint function should return the answer", function () {
+    const app = new BerlinClock();
+  
+    it("MinutesOnePrint should return XXXXXXXXXXX when given 1", function () {
+      const result = app.minutesFivePrint(1);
+  
+      expect(result).toBe("XXXXXXXXXXX");
+    });
+  
+    
+  });
