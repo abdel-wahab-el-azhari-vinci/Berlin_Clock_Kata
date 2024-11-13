@@ -1,6 +1,18 @@
 // R => Red light
 // X => Light Off
 export class BerlinClock {
+
+  clockPrint() {
+    const date = new Date();
+    
+    return `Actual hour: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}\n` + 
+    "     " + this.seconds(date.getSeconds()) + "     \n"
+    + "    " +this.hoursFivePrint(date.getHours()) + "\n"
+    + "    " + this.hoursOnePrint(date.getHours()) + "\n"
+    + " " +this.minutesFivePrint(date.getMinutes()) + "\n"
+    + "    " +this.minutesOnePrint(date.getMinutes());
+  }
+  
   hoursOne(hour) {
     return multipleOf5(hour);
   }

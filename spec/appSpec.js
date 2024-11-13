@@ -400,4 +400,7 @@ describe("HoursFivePrint function should return the answer", function () {
 
     expect(result).toBe("RRRR");
   });
+  
+  //If all tests passes, the clock will appear in console
+  console.log(app.clockPrint());
 });
