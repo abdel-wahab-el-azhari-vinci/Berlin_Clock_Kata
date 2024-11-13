@@ -21,6 +21,17 @@ export class BerlinClock {
     if (second % 2 == 0) return "R";
     return "X";
   }
+
+  minutesOnePrint(minute) {
+    const tabMinutesOne = ['X', 'X', 'X', 'X'];
+    const minutes = this.minutesOne(minute);
+
+    for (let i = 0; i < minutes; i++){
+      tabMinutesOne[i] = 'Y';
+    }
+
+    return tabMinutesOne.join('');
+  }
 }
 
 function divideBy5(number) {

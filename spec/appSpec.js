@@ -214,3 +214,14 @@ describe("Minutes function should return the answer", function () {
       expect(result).toBe("R");
     });
   });
+
+  describe("MinutesOnePrint function should return the answer", function () {
+    const app = new BerlinClock();
+  
+    it("MinutesOnePrint should return YXXX when given 1", function () {
+      const result = app.minutesOnePrint(1);
+
+      expect(result).toBe("YXXX");
+    });
+    
+  });
