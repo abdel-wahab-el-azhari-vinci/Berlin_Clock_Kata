@@ -47,6 +47,17 @@ export class BerlinClock {
 
     return tabMinutesFive.join('');
   }
+
+  hoursOnePrint(hour) {
+    const tabHoursOne = ['X', 'X', 'X', 'X'];
+    const hours = this.hoursOne(hour);
+
+    for (let i = 0; i < hours; i++){
+      tabHoursOne[i] = 'R';
+    }
+
+    return tabMinutesFive.join('');
+  }
 }
 
 function divideBy5(number) {

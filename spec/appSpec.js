@@ -327,3 +327,13 @@ describe("MinutesFivePrint function should return the answer", function () {
     expect(result).toBe("YYRYYRYYRYY");
   });
 });
+
+describe("HoursOnePrint function should return the answer", function () {
+  const app = new BerlinClock();
+
+  it("HoursOnePrint should return XXXX when given 0", function () {
+    const result = app.minutesOnePrint(0);
+
+    expect(result).toBe("XXXX");
+  });
+});
