@@ -249,10 +249,16 @@ describe("MinutesOnePrint function should return the answer", function () {
 describe("MinutesFivePrint function should return the answer", function () {
     const app = new BerlinClock();
   
-    it("MinutesOnePrint should return XXXXXXXXXXX when given 1", function () {
+    it("MinutesFivePrint should return XXXXXXXXXXX when given 1", function () {
       const result = app.minutesFivePrint(1);
   
       expect(result).toBe("XXXXXXXXXXX");
+    });
+
+    it("MinutesFivePrint should return YXXXXXXXXXX when given 6", function () {
+      const result = app.minutesFivePrint(6);
+  
+      expect(result).toBe("YXXXXXXXXXX");
     });
   
     
