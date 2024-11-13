@@ -321,4 +321,9 @@ describe("MinutesFivePrint function should return the answer", function () {
     expect(result).toBe("YYRYYRYYRYY");
   });
   
+  it("MinutesFivePrint should return YYRYYRYYRYY when given 59", function () {
+    const result = app.minutesFivePrint(59);
+
+    expect(result).toBe("YYRYYRYYRYY");
+  });
 });
