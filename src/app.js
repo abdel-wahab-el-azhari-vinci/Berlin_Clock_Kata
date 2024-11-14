@@ -1,5 +1,6 @@
 // R => Red light
 // X => Light Off
+// Y => Yellow light
 export class BerlinClock {
 
   clockPrint() {
